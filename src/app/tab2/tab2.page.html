@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Projects
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ion-text-center">Projects</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <swiper [slidesPerView]="1" [spaceBetween]="50" [navigation]="true" [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()" #swiper>
+    <ng-template swiperSlide class="swiper-slide-container">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="3" sizeMd="6" offsetMd="3" sizeLg="4" offsetLg="4" sizeXl="4" offsetXl="4"
+          size="12">
+          <ion-card>
+            <img src="../../assets/images/Herd.png" />
+            <ion-card-header>
+              <ion-card-title>Herd</ion-card-title>
+              <ion-card-subtitle>Node.js, DynamoDB, AWS, Lambda, SES, Amplify, Cognito, Cloudformation, React Native,
+                TypeScript, Serverless Framework</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              A gig finding app that lets fans and artists discover new music, find local gigs, find gig buddies in
+              message boards, and post their own gigs to attract fans. Users can set email reminders to remind them of
+              upcoming gigs they’re interested in, talk on individual gig message boards, as well as follow links to
+              listen to artists on Spotify.
+            </ion-card-content>
+            <ion-card-content>
+              <a target="_blank" href="https://northcoders.com/projects/march-2022/herd">
+                <h3>View Project</h3>
+              </a>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ng-template>
+    <ng-template swiperSlide class="swiper-slide-container">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="3" sizeMd="6" offsetMd="3" sizeLg="4" offsetLg="4" sizeXl="4" offsetXl="4"
+          size="12">
+          <ion-card>
+            <img src="../../assets/images/NCNews.png" />
+            <ion-card-header>
+              <ion-card-title>News App User Interface</ion-card-title>
+              <ion-card-subtitle>JavaScript, React, Netlify</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              A front end user interface built using React and hosted on
+              Netlify. This is intended to mimic the frontend of a real
+              world news website (such as reddit).
+            </ion-card-content>
+            <ion-card-content>
+              <a target="_blank" href="https://nc-news-reed.netlify.app/">
+                <h3>View Project</h3>
+              </a>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ng-template>
+    <ng-template swiperSlide class="swiper-slide-container">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="3" sizeMd="6" offsetMd="3" sizeLg="4" offsetLg="4" sizeXl="4" offsetXl="4"
+          size="12">
+          <ion-card>
+            <img src="../../assets/images/api.png" />
+            <ion-card-header>
+              <ion-card-title>News App API</ion-card-title>
+              <ion-card-subtitle>PostgreSQL, express.js, Node.js, Heroku</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              An API that has been built for the purpose of accessing
+              application data programmatically. This is intended to mimic
+              a real world backend service (such as reddit).
+            </ion-card-content>
+            <ion-card-content>
+              <a target="_blank" href="https://james-news-app.herokuapp.com/api">
+                <h3>View Project</h3>
+              </a>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ng-template>
+  </swiper>
+  <app-footer slot="fixed"></app-footer>
+</ion-content>
