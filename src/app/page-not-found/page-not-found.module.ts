@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { PageNotFoundPageRoutingModule } from './page-not-found-routing.module';
 
 import { PageNotFoundPage } from './page-not-found.page';
+import { FooterComponentModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PageNotFoundPageRoutingModule
+    PageNotFoundPageRoutingModule,
+    FooterComponentModule
   ],
   declarations: [PageNotFoundPage]
 })
-export class PageNotFoundPageModule {}
+export class PageNotFoundPageModule { }

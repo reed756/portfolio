@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { SuccessPageRoutingModule } from './success-routing.module';
 
 import { SuccessPage } from './success.page';
+import { FooterComponentModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SuccessPageRoutingModule
+    SuccessPageRoutingModule,
+    FooterComponentModule
   ],
   declarations: [SuccessPage]
 })
-export class SuccessPageModule {}
+export class SuccessPageModule { }
