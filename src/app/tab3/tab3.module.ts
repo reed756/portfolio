@@ -8,6 +8,7 @@ import { Tab3Page } from './tab3.page';
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 import { FooterComponentModule } from '../footer/footer.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ToggleComponentModule } from '../toggle/toggle.module';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToggleComponentModule
   ],
   declarations: [Tab3Page],
 })

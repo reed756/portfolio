@@ -8,6 +8,7 @@ import { Tab2Page } from './tab2.page';
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { FooterComponentModule } from '../footer/footer.module';
 import { SwiperModule } from 'swiper/angular';
+import { ToggleComponentModule } from '../toggle/toggle.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { SwiperModule } from 'swiper/angular';
     FormsModule,
     Tab2PageRoutingModule,
     FooterComponentModule,
-    SwiperModule
+    SwiperModule,
+    ToggleComponentModule
   ],
   declarations: [Tab2Page]
 })

@@ -1,0 +1,12 @@
+<ion-row>
+  <ion-item lines="none" style="--background: var(--ion-toolbar-background, var(--ion-color-step-50, #f7f7f7));">
+    <ion-label for="toggle" class="ion-align-items-center" style="display: flex;">
+      <ion-text class="ion-text-wrap" *ngIf="showLabel()">
+        <h3>
+          Dark Mode:
+        </h3>
+      </ion-text>
+      <ion-toggle mode="ios" (ionChange)="toggleDarkMode($event)" name="toggle" id="themeToggle"></ion-toggle>
+    </ion-label>
+  </ion-item>
+</ion-row>
