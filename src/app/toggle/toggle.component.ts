@@ -11,6 +11,8 @@ export class ToggleComponent implements OnInit {
   // Query for the toggle that is used to change between themes
   toggle = document.querySelector('#themeToggle');
 
+  darkMode: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -21,6 +23,7 @@ export class ToggleComponent implements OnInit {
   // Listen for the toggle check/uncheck to toggle the dark class on the <body>
   toggleDarkMode(ev) {
     document.body.classList.toggle('dark', ev.detail.checked);
+    this.darkMode = !this.darkMode;
   }
 
   // Called when the app loads
