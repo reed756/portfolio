@@ -1,21 +1,32 @@
 <ion-footer>
   <ion-toolbar>
-    <ion-row>
-      <ion-title class="ion-text-center">James Reed © 2022</ion-title>
-    </ion-row>
-    <ion-row>
-      <ion-col style="display: flex;
-      justify-content: space-around;" size="12" sizeSm="5" offsetSm="3.5"><a target="_blank"
-          href="https://twitter.com/reedandj1">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/james-reed-a6b413111/">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a target="_blank" href="https://www.instagram.com/reedandj1/">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-      </ion-col>
-    </ion-row>
+    <ion-title class="ion-text-center">
+      <ion-label>
+        <ion-row slot="top">
+          <ion-col sizeSm="6" offsetSm="3" sizeMd="6" offsetMd="3" sizeLg="4" offsetLg="4" sizeXl="4" offsetXl="4"
+            size="12">
+            James Reed © 2022
+          </ion-col>
+        </ion-row>
+        <ion-row slot="bottom">
+          <ion-col sizeSm="6" offsetSm="3" sizeMd="6" offsetMd="3" sizeLg="4" offsetLg="4" sizeXl="4" offsetXl="4"
+            size="12" class="ion-justify-content-between ion-padding-horizontal" style="display: flex;">
+            <a target="_blank" href="https://twitter.com/reedandj1">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/james-reed-a6b413111/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/reedandj1/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-label>
+    </ion-title>
+    <!-- <ion-col style="display: flex;
+      justify-content: space-around;" size="12" sizeSm="5" offsetSm="3.5"> -->
+    <!-- </ion-col> -->
+
   </ion-toolbar>
 </ion-footer>
