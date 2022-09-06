@@ -9,6 +9,7 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
 import { FooterComponentModule } from '../footer/footer.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ToggleComponentModule } from '../toggle/toggle.module';
+import { SocialRowComponentModule } from '../social-row/social-row.module';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { ToggleComponentModule } from '../toggle/toggle.module';
     Tab3PageRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ToggleComponentModule
+    ToggleComponentModule,
+    SocialRowComponentModule
   ],
   declarations: [Tab3Page],
 })
