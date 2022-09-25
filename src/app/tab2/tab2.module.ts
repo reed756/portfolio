@@ -9,7 +9,6 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { FooterComponentModule } from '../footer/footer.module';
 import { SwiperModule } from 'swiper/angular';
 import { ToggleComponentModule } from '../toggle/toggle.module';
-import { SocialRowComponentModule } from '../social-row/social-row.module';
 
 @NgModule({
   imports: [
@@ -20,7 +19,6 @@ import { SocialRowComponentModule } from '../social-row/social-row.module';
     FooterComponentModule,
     SwiperModule,
     ToggleComponentModule,
-    SocialRowComponentModule
   ],
   declarations: [Tab2Page]
 })

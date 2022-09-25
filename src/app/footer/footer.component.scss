@@ -3,7 +3,11 @@ ion-icon {
 }
 
 ion-title {
+  font-size: 1.5rem;
   a {
     margin: 16px;
+    ion-icon {
+      font-size: 1.5rem;
+    }
   }
 }

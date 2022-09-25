@@ -7,7 +7,6 @@ import { FooterComponentModule } from '../footer/footer.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { ToggleComponentModule } from '../toggle/toggle.module';
-import { SocialRowComponentModule } from '../social-row/social-row.module';
 
 @NgModule({
   imports: [
@@ -17,7 +16,6 @@ import { SocialRowComponentModule } from '../social-row/social-row.module';
     FooterComponentModule,
     Tab1PageRoutingModule,
     ToggleComponentModule,
-    SocialRowComponentModule
   ],
   declarations: [Tab1Page]
 })
